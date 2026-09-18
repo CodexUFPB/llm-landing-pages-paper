@@ -1,5 +1,8 @@
 # Compression of Qualitative Variation: Replication Package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22836817.svg)](https://doi.org/10.5281/zenodo.22836817)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Research data and materials for the study *Compression of Qualitative Variation: The Limits of Prompt Complexity in LLM-Generated Landing Pages*, submitted to the **Journal on Interactive Systems (JIS)**.
 
 This repository contains everything required to understand, audit, replicate or extend the study: the prompts, the skill files, the source code of the nine generated artifacts exactly as delivered by the models, the evaluation instrument, the four independent evaluation records, and the consolidation and agreement analysis.
@@ -95,6 +98,8 @@ The contents of `artifacts/` are machine-generated outputs reproduced verbatim f
 ## Citation
 
 See `CITATION.cff`. Please cite the article rather than this repository alone.
+
+This repository is archived on Zenodo. The concept DOI **10.5281/zenodo.22836817** always resolves to the most recent version and is the one to cite; version v.1.0 has its own DOI, 10.5281/zenodo.22836818.
 
 ---
 
