@@ -1,0 +1,30 @@
+{
+  "projectId": "local_extremo_oriente",
+  "projectTitle": "Imobiliaria Extremo Oriente",
+  "designSystemId": "local_design_system",
+  "screens": {
+    "desktop": {
+      "current": "desktop-v1.html",
+      "history": ["desktop-v1.html"]
+    },
+    "mobile": {
+      "current": "",
+      "history": []
+    }
+  },
+  "interview": {
+    "projectName": "Imobiliária Extremo Oriente",
+    "description": "Aplicativo imobiliário com catálogo de diversos imóveis para venda e locação.",
+    "targetUsers": "Público geral",
+    "cta": "Baixar o App",
+    "brandFeel": ["Sofisticado", "Confiável", "Prático"],
+    "colorMode": "DARK",
+    "primaryColor": "#D4AF37",
+    "colorVariant": "TONAL_SPOT",
+    "headlineFont": "DOMINE",
+    "bodyFont": "DM_SANS",
+    "roundness": "ROUND_EIGHT"
+  },
+  "iterationCount": 1,
+  "status": "designing"
+}

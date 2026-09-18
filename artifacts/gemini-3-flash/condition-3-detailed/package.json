@@ -1,0 +1,16 @@
+{
+  "name": "extremo-oriente-landing-page",
+  "version": "1.0.0",
+  "description": "Landing Page Premium da Imobiliária Extremo Oriente",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o"
+  },
+  "keywords": [
+    "landing-page",
+    "premium",
+    "real-estate"
+  ],
+  "author": "Imobiliária Extremo Oriente",
+  "license": "MIT"
+}

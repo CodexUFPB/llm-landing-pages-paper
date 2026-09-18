@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imobiliária Extremo Oriente | Catálogo de Imóveis Premium</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Encontre os imóveis mais luxuosos e exclusivos para venda e locação. Baixe o aplicativo da Imobiliária Extremo Oriente e tenha uma curadoria de alto padrão na palma da sua mão.">
+  <meta name="keywords" content="imobiliária, alto padrão, luxo, apartamento de luxo, mansão, aluguel de luxo, João Pessoa, Tambaú, Extremo Oriente">
+  <meta name="author" content="Imobiliária Extremo Oriente">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Imobiliária Extremo Oriente | Catálogo de Imóveis Premium">
+  <meta property="og:description" content="Curadoria exclusiva de imóveis magníficos para venda e locação nas regiões mais nobres. Baixe o app.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=630&q=80">
+
+  <!-- Content Security Policy (CSP) para Segurança robusta -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self' https://api.github.com;">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
+
+  <!-- Google Fonts: Cinzel para Títulos Majestosos e Inter para Texto de Corpo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'gold': {
+              'primary': '#D4AF37', // Dourado Metálico Real
+              'hover': '#FFD700',   // Amarelo Ouro Brilhante
+              'dark': '#9A7B1C',    // Dourado Escuro de Borda
+              'light': '#F3E5AB',   // Creme Dourado Suave
+            },
+            'dark': {
+              'bg': '#0a0a0a',      // Fundo Preto Profundo
+              'card': '#121212',    // Fundo de Cards Luxuosos
+              'border': '#1c1c1c',  // Linhas de Divisão Sutis
+            }
+          },
+          fontFamily: {
+            'serif': ['Cinzel', 'serif'],
+            'sans': ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-12px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Estilos Customizados e Overrides -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Biblioteca Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-dark-bg text-gray-200 font-sans antialiased selection:bg-gold-primary selection:text-black overflow-x-hidden">
+
+  <!-- ♿ ACESSIBILIDADE: Link de salto para leitores de tela -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-gold-primary focus:text-black focus:px-4 focus:py-2 focus:rounded-md focus:z-50 focus:font-semibold focus:outline-none focus:ring-2 focus:ring-gold-hover">
+    Pular para o conteúdo principal
+  </a>
+
+  <!-- 1. Header & Navigation -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-dark-bg/80 backdrop-blur-md border-b border-dark-border transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center space-x-3 group focus-visible:ring-2 focus-visible:ring-gold-primary focus-visible:rounded px-2 py-1 outline-none" aria-label="Imobiliária Extremo Oriente - Ir para o topo">
+        <span class="text-2xl sm:text-3xl font-serif font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-gold-primary via-gold-light to-gold-primary group-hover:brightness-110 transition duration-300">
+          EO
+        </span>
+        <div class="hidden sm:flex flex-col border-l border-gold-dark/40 pl-3">
+          <span class="text-xs font-serif font-bold tracking-widest text-gold-primary uppercase">Extremo Oriente</span>
+          <span class="text-[9px] font-sans tracking-[0.25em] text-gray-400 uppercase font-light -mt-0.5">Imobiliária Premium</span>
+        </div>
+      </a>
+
+      <!-- Navbar Action -->
+      <nav class="flex items-center space-x-6">
+        <a href="#features" class="hidden md:block text-sm font-medium hover:text-gold-primary transition duration-200 focus-visible:text-gold-primary focus-visible:outline-none">
+          Diferenciais
+        </a>
+        <a href="#testimonials" class="hidden md:block text-sm font-medium hover:text-gold-primary transition duration-200 focus-visible:text-gold-primary focus-visible:outline-none">
+          Depoimentos
+        </a>
+        
+        <!-- CTA Header -->
+        <a href="#download" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-gold-dark to-gold-primary text-black hover:from-gold-primary hover:to-gold-hover active:scale-[0.98] transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gold-hover focus-visible:outline-none shadow-[0_4px_12px_rgba(212,175,55,0.15)]" aria-label="Ir para a seção de download do aplicativo">
+          Baixar App
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. Main Content Container -->
+  <main id="main-content" class="pt-20">
+
+    <!-- HERO SECTION (Dobra Principal) -->
+    <section class="relative min-h-[calc(100vh-80px)] flex items-center py-16 sm:py-24 overflow-hidden" aria-labelledby="hero-title">
+      
+      <!-- Efeito de Fundo: Luz Dourada Ativa (Glow) -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[500px] h-[350px] sm:h-[500px] rounded-full bg-gold-primary/5 blur-[80px] sm:blur-[120px] pointer-events-none z-0"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Lado Esquerdo: Mensagem e CTAs -->
+          <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
+            
+            <!-- Selo Exclusivo -->
+            <div class="inline-flex items-center justify-center lg:justify-start space-x-2 mb-6">
+              <span class="h-[1px] w-8 bg-gold-primary"></span>
+              <span class="text-xs font-serif font-semibold text-gold-primary tracking-[0.25em] uppercase">Disponível em iOS e Android</span>
+              <span class="h-[1px] w-8 bg-gold-primary"></span>
+            </div>
+
+            <!-- Título de Alto Impacto -->
+            <h1 id="hero-title" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight tracking-tight text-balance">
+              O seu próximo endereço de <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-primary via-gold-hover to-gold-primary font-black">alto padrão</span> na palma da mão
+            </h1>
+
+            <!-- Subtítulo / Descrição de Valor -->
+            <p class="mt-6 text-base sm:text-lg text-gray-300 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed text-pretty">
+              Uma curadoria única das residências mais luxuosas e exclusivas para venda e locação nas regiões mais valorizadas. Explore fotos em alta resolução, visitas 3D imersivas e fale diretamente com nossos corretores de elite através de uma interface desenhada para o seu conforto.
+            </p>
+
+            <!-- Botões de Ação Duplos (App Store e Google Play) -->
+            <div id="download" class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
+              
+              <!-- Botão App Store -->
+              <a href="#" class="w-full sm:w-auto min-w-[200px] flex items-center justify-center space-x-3 px-6 py-3 rounded-xl bg-black border border-gold-dark/40 hover:border-gold-primary active:scale-[0.98] transition-all duration-300 hover:shadow-[0_0_15px_rgba(212,175,55,0.15)] group focus-visible:ring-2 focus-visible:ring-gold-primary focus-visible:outline-none" aria-label="Baixar aplicativo na App Store da Apple">
+                <svg class="w-7 h-7 text-white group-hover:text-gold-primary transition duration-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-.96.04-2.13.64-2.82 1.45-.6.69-1.12 1.84-.98 2.94 1.07.08 2.16-.52 2.81-1.33z"/>
+                </svg>
+                <div class="text-left leading-none">
+                  <span class="text-[9px] uppercase tracking-wider text-gray-400 font-medium block">Baixar na</span>
+                  <span class="text-sm font-semibold text-white group-hover:text-gold-primary transition duration-300 block mt-0.5">App Store</span>
+                </div>
+              </a>
+
+              <!-- Botão Google Play -->
+              <a href="#" class="w-full sm:w-auto min-w-[200px] flex items-center justify-center space-x-3 px-6 py-3 rounded-xl bg-black border border-gold-dark/40 hover:border-gold-primary active:scale-[0.98] transition-all duration-300 hover:shadow-[0_0_15px_rgba(212,175,55,0.15)] group focus-visible:ring-2 focus-visible:ring-gold-primary focus-visible:outline-none" aria-label="Disponível no Google Play para dispositivos Android">
+                <svg class="w-7 h-7 text-white group-hover:text-gold-primary transition duration-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M5 3.002c-.158.006-.328.05-.486.137l11.45 11.45L21.365 9.19a2.03 2.03 0 0 0-2.45-.164L5.488 3.14A1.98 1.98 0 0 0 5 3.002zM3.46 4.316a1.98 1.98 0 0 0-.46 1.348v12.673c0 .506.186.993.518 1.353L14.477 12 3.46 4.316zm12.98 9.646L5.05 20.732a1.98 1.98 0 0 0 1.542.27c.433-.1.826-.34 1.135-.536l10.748-6.177-2.037-2.327zm6.002-1.326a2.03 2.03 0 0 0-.08-2.61l-2.9 1.666 2.98 2.944z"/>
+                </svg>
+                <div class="text-left leading-none">
+                  <span class="text-[9px] uppercase tracking-wider text-gray-400 font-medium block">Disponível no</span>
+                  <span class="text-sm font-semibold text-white group-hover:text-gold-primary transition duration-300 block mt-0.5">Google Play</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Contador Fictício de Downloads -->
+            <div class="mt-8 flex items-center justify-center lg:justify-start space-x-6 text-xs text-gray-400 font-light divide-x divide-dark-border">
+              <div class="flex items-center space-x-2">
+                <span class="flex h-2 w-2 relative">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-primary opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-gold-primary"></span>
+                </span>
+                <span>Mais de <strong>15.000</strong> downloads</span>
+              </div>
+              <div class="pl-6 flex items-center space-x-1">
+                <span class="text-gold-primary font-semibold">★ 4.9</span>
+                <span>Avaliação média nas lojas</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Lado Direito: Mockup Interativo e Animado em CSS -->
+          <div class="lg:col-span-5 flex justify-center items-center relative select-none">
+            
+            <!-- Efeito de Luz Traseira do Mockup -->
+            <div class="absolute w-[280px] sm:w-[350px] h-[280px] sm:h-[350px] rounded-full bg-gold-primary/10 blur-[60px] pointer-events-none z-0"></div>
+
+            <!-- Estrutura Externa do Smartphone -->
+            <div class="relative w-[280px] sm:w-[320px] aspect-[9/18.5] bg-[#0c0c0d] p-3 rounded-[44px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 animate-float z-10">
+              
+              <!-- Detalhe da Câmera Traseira / Alto Falante superior (Notch sutil) -->
+              <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-full z-30 flex items-center justify-center">
+                <span class="w-12 h-1 bg-gray-800 rounded-full block mr-2"></span>
+                <span class="w-2.5 h-2.5 bg-gray-900 rounded-full border border-gray-800 block"></span>
+              </div>
+
+              <!-- Tela Interna do Aplicativo -->
+              <div class="w-full h-full bg-[#070707] rounded-[34px] overflow-hidden relative flex flex-col border border-black pt-6 pb-2">
+                
+                <!-- Navbar Fictícia da Tela do App -->
+                <div class="px-4 py-3 flex items-center justify-between text-white border-b border-dark-border/40 bg-black/40 backdrop-blur-md">
+                  <div class="flex items-center space-x-1">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold-primary" aria-hidden="true"></i>
+                    <span class="text-[10px] font-medium font-serif tracking-widest text-gold-primary uppercase">Extremo Oriente</span>
+                  </div>
+                  <i data-lucide="bell" class="w-3.5 h-3.5 text-gray-400" aria-hidden="true"></i>
+                </div>
+
+                <!-- Conteúdo da Tela do App (Imóvel Magnífico) -->
+                <div class="flex-1 overflow-hidden p-3 space-y-3 flex flex-col">
+                  
+                  <!-- Foto do Imóvel de Luxo (Placeholded por uma foto real de arquitetura premium da Unsplash) -->
+                  <div class="w-full h-40 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Mansão moderna com piscina e luzes douradas" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+                    <div class="absolute top-2 right-2 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm border border-gold-dark/40 text-[9px] font-bold text-gold-primary uppercase tracking-wider">
+                      Venda
+                    </div>
+                    <div class="absolute bottom-2 left-2 text-white">
+                      <h4 class="text-xs font-semibold">Mansão Lumina</h4>
+                      <p class="text-[9px] text-gray-300 font-light flex items-center mt-0.5">
+                        <i data-lucide="map-pin" class="w-2.5 h-2.5 text-gold-primary mr-0.5" aria-hidden="true"></i> Tambaú, João Pessoa
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Chips de Filtros Rápidos -->
+                  <div class="flex space-x-1.5 overflow-hidden">
+                    <span class="px-2.5 py-1 rounded-full bg-gold-primary text-black text-[8px] font-semibold whitespace-nowrap">Todas</span>
+                    <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300 text-[8px] font-medium whitespace-nowrap">Mansões</span>
+                    <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300 text-[8px] font-medium whitespace-nowrap">Coberturas</span>
+                  </div>
+
+                  <!-- Detalhes do Catálogo Imóvel 2 (Sutil) -->
+                  <div class="flex-1 bg-white/[0.02] border border-white/[0.05] rounded-2xl p-2.5 flex items-center justify-between">
+                    <div class="flex items-center space-x-2.5">
+                      <div class="w-10 h-10 rounded-xl overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=150&q=80" alt="Apartamento de Luxo Cobertura" class="w-full h-full object-cover">
+                      </div>
+                      <div class="text-left">
+                        <h5 class="text-[10px] font-semibold text-white leading-tight">Cobertura Golden Hour</h5>
+                        <span class="text-[8px] text-gray-400 font-light block">Vendas e Aluguel</span>
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <span class="text-[9px] font-bold text-gold-primary block">R$ 4.2M</span>
+                      <span class="text-[7px] text-gray-400 font-light block">Cond. Exclusivo</span>
+                    </div>
+                  </div>
+
+                  <!-- Botão Fictício para Abrir Detalhes -->
+                  <div class="w-full py-2 rounded-xl bg-gradient-to-r from-gold-dark to-gold-primary text-black text-center text-[10px] font-bold uppercase tracking-wider mt-auto cursor-default">
+                    Ver Portfólio Exclusivo
+                  </div>
+
+                </div>
+
+                <!-- Barra de Navegação Inferior -->
+                <div class="px-6 py-2 border-t border-dark-border/40 bg-black/60 backdrop-blur-md flex justify-between items-center text-gray-500">
+                  <i data-lucide="home" class="w-4 h-4 text-gold-primary" aria-hidden="true"></i>
+                  <i data-lucide="search" class="w-4 h-4" aria-hidden="true"></i>
+                  <i data-lucide="heart" class="w-4 h-4" aria-hidden="true"></i>
+                  <i data-lucide="user" class="w-4 h-4" aria-hidden="true"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION (Por Que Baixar o App?) -->
+    <section id="features" class="py-24 bg-black relative border-t border-dark-border" aria-labelledby="features-title">
+      
+      <!-- Luz Dourada de Fundo nas Features -->
+      <div class="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-gold-primary/3 blur-[100px] pointer-events-none z-0"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <span class="text-xs font-serif font-semibold tracking-[0.3em] text-gold-primary uppercase">Experiência Completa</span>
+          <h2 id="features-title" class="mt-3 text-3xl sm:text-4xl font-serif font-bold text-white text-pretty">
+            Uma jornada de luxo desenhada para o seu celular
+          </h2>
+          <p class="mt-4 text-gray-400 font-light leading-relaxed">
+            Eliminamos os ruídos e a burocracia do mercado imobiliário tradicional. O aplicativo oficial da Extremo Oriente foi concebido para oferecer sofisticação tecnológica e comodidade sem precedentes.
+          </p>
+        </div>
+
+        <!-- Grid de Features (4 Diferenciais) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Feature 1: Curadoria de Luxo -->
+          <div class="bg-dark-card border border-dark-border/80 hover:border-gold-primary/30 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.7)] group">
+            <div class="w-12 h-12 rounded-xl bg-gold-primary/5 flex items-center justify-center border border-gold-dark/20 group-hover:bg-gold-primary group-hover:text-black transition-all duration-300">
+              <i data-lucide="sliders-horizontal" class="w-6 h-6 text-gold-primary group-hover:text-black transition duration-300" aria-hidden="true"></i>
+            </div>
+            <h3 class="mt-6 text-lg font-serif font-bold text-white">Filtros de Alto Padrão</h3>
+            <p class="mt-3 text-sm text-gray-400 font-light leading-relaxed">
+              Filtre por características exclusivas como helipontos, píeres privativos, adegas subterrâneas ou vista definitiva para o mar.
+            </p>
+          </div>
+
+          <!-- Feature 2: Busca Avançada Inteligente -->
+          <div class="bg-dark-card border border-dark-border/80 hover:border-gold-primary/30 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.7)] group">
+            <div class="w-12 h-12 rounded-xl bg-gold-primary/5 flex items-center justify-center border border-gold-dark/20 group-hover:bg-gold-primary group-hover:text-black transition-all duration-300">
+              <i data-lucide="search-code" class="w-6 h-6 text-gold-primary group-hover:text-black transition duration-300" aria-hidden="true"></i>
+            </div>
+            <h3 class="mt-6 text-lg font-serif font-bold text-white">Busca Ultra-Rápida</h3>
+            <p class="mt-3 text-sm text-gray-400 font-light leading-relaxed">
+              Mecanismo de busca otimizado que carrega mapas, dados de condomínio e valores atualizados instantaneamente na sua tela.
+            </p>
+          </div>
+
+          <!-- Feature 3: Visita Virtual Imersiva -->
+          <div class="bg-dark-card border border-dark-border/80 hover:border-gold-primary/30 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.7)] group">
+            <div class="w-12 h-12 rounded-xl bg-gold-primary/5 flex items-center justify-center border border-gold-dark/20 group-hover:bg-gold-primary group-hover:text-black transition-all duration-300">
+              <i data-lucide="boxes" class="w-6 h-6 text-gold-primary group-hover:text-black transition duration-300" aria-hidden="true"></i>
+            </div>
+            <h3 class="mt-6 text-lg font-serif font-bold text-white">Visitas Imersivas 3D</h3>
+            <p class="mt-3 text-sm text-gray-400 font-light leading-relaxed">
+              Explore cada cômodo em detalhes ultra-realistas diretamente do app, economizando seu precioso tempo antes da visita presencial.
+            </p>
+          </div>
+
+          <!-- Feature 4: Consultoria Exclusiva -->
+          <div class="bg-dark-card border border-dark-border/80 hover:border-gold-primary/30 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.7)] group">
+            <div class="w-12 h-12 rounded-xl bg-gold-primary/5 flex items-center justify-center border border-gold-dark/20 group-hover:bg-gold-primary group-hover:text-black transition-all duration-300">
+              <i data-lucide="user-check" class="w-6 h-6 text-gold-primary group-hover:text-black transition duration-300" aria-hidden="true"></i>
+            </div>
+            <h3 class="mt-6 text-lg font-serif font-bold text-white">Conexão de Elite</h3>
+            <p class="mt-3 text-sm text-gray-400 font-light leading-relaxed">
+              Agende visitas ou tire dúvidas em um único toque diretamente com corretores especialistas que atendem de forma discreta e personalizada.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION (Social Proof) -->
+    <section id="testimonials" class="py-24 bg-dark-bg relative border-t border-dark-border" aria-labelledby="testimonials-title">
+      
+      <!-- Luz de fundo sutil -->
+      <div class="absolute top-1/2 left-0 w-[300px] h-[300px] rounded-full bg-gold-primary/2 blur-[80px] pointer-events-none z-0"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <span class="text-xs font-serif font-semibold tracking-[0.3em] text-gold-primary uppercase">Avaliações dos Clientes</span>
+          <h2 id="testimonials-title" class="mt-3 text-3xl sm:text-4xl font-serif font-bold text-white text-pretty">
+            O que dizem os nossos clientes de elite
+          </h2>
+          <p class="mt-4 text-gray-400 font-light">
+            A satisfação absoluta de investidores e famílias que confiaram em nossa assessoria imobiliária.
+          </p>
+        </div>
+
+        <!-- Depoimentos (3 cards) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Depoimento 1 -->
+          <div class="bg-dark-card border border-dark-border/80 hover:border-gold-primary/20 p-8 rounded-2xl transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.8)] flex flex-col justify-between">
+            <div>
+              <!-- 5 Estrelas Douradas -->
+              <div class="flex items-center space-x-1 text-gold-primary" aria-label="Avaliação 5 estrelas">
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+              </div>
+              <p class="mt-6 text-sm text-gray-300 font-light italic leading-relaxed">
+                "Encontrei minha nova casa em Tambaú em menos de uma semana usando o aplicativo! O nível de curadoria é inacreditável. O app poupou incontáveis horas de busca e a intermediação foi impecável."
+              </p>
+            </div>
+            <div class="mt-8 pt-6 border-t border-dark-border flex items-center space-x-3.5">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-dark to-gold-primary text-black font-serif font-black flex items-center justify-center text-xs">
+                AM
+              </div>
+              <div>
+                <h4 class="text-xs font-semibold text-white">Alexandre Medeiros</h4>
+                <span class="text-[10px] text-gray-500 font-light block">Diretor de Venture Capital</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="bg-dark-card border border-dark-border/80 hover:border-gold-primary/20 p-8 rounded-2xl transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.8)] flex flex-col justify-between">
+            <div>
+              <!-- 5 Estrelas Douradas -->
+              <div class="flex items-center space-x-1 text-gold-primary" aria-label="Avaliação 5 estrelas">
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+              </div>
+              <p class="mt-6 text-sm text-gray-300 font-light italic leading-relaxed">
+                "O catálogo do app é impecável. A experiência de navegação e a segurança das informações me deram a confiança necessária para investir em duas coberturas na orla sem sair de São Paulo."
+              </p>
+            </div>
+            <div class="mt-8 pt-6 border-t border-dark-border flex items-center space-x-3.5">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-dark to-gold-primary text-black font-serif font-black flex items-center justify-center text-xs">
+                BS
+              </div>
+              <div>
+                <h4 class="text-xs font-semibold text-white">Beatriz Silva</h4>
+                <span class="text-[10px] text-gray-500 font-light block">Investidora Imobiliária</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="bg-dark-card border border-dark-border/80 hover:border-gold-primary/20 p-8 rounded-2xl transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.8)] flex flex-col justify-between">
+            <div>
+              <!-- 5 Estrelas Douradas -->
+              <div class="flex items-center space-x-1 text-gold-primary" aria-label="Avaliação 5 estrelas">
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-gold-primary text-gold-primary" aria-hidden="true"></i>
+              </div>
+              <p class="mt-6 text-sm text-gray-300 font-light italic leading-relaxed">
+                "Destaque absoluto para a visita virtual em 3D. Pude analisar com riqueza de detalhes todos os acabamentos dos banheiros e da área gourmet antes de agendar a reunião final de compra."
+              </p>
+            </div>
+            <div class="mt-8 pt-6 border-t border-dark-border flex items-center space-x-3.5">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-dark to-gold-primary text-black font-serif font-black flex items-center justify-center text-xs">
+                RC
+              </div>
+              <div>
+                <h4 class="text-xs font-semibold text-white">Ricardo Cavalcanti</h4>
+                <span class="text-[10px] text-gray-500 font-light block">Empresário do Setor de Energia</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 3. Footer -->
+  <footer class="bg-black border-t border-dark-border text-gray-500 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 items-start">
+        
+        <!-- Logo e Copyright -->
+        <div class="space-y-4 col-span-1 md:col-span-2">
+          <div class="flex items-center space-x-3">
+            <span class="text-2xl font-serif font-black tracking-widest text-gold-primary">EO</span>
+            <div class="flex flex-col border-l border-gold-dark/40 pl-3">
+              <span class="text-[10px] font-serif font-bold tracking-widest text-gold-primary uppercase">Extremo Oriente</span>
+              <span class="text-[8px] font-sans tracking-[0.25em] text-gray-400 uppercase font-light -mt-0.5">Imobiliária Premium</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 font-light leading-relaxed max-w-sm">
+            Curadoria exclusiva de patrimônios de luxo. CRECI 1234-J. A Imobiliária Extremo Oriente é uma marca registrada especializada na intermediação de imóveis de alto padrão.
+          </p>
+          <p class="text-[10px] text-gray-600 font-light mt-4">
+            &copy; 2026 Imobiliária Extremo Oriente. Todos os direitos reservados.
+          </p>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="space-y-4">
+          <h4 class="text-xs font-semibold text-white uppercase tracking-wider">Empresa</h4>
+          <ul class="space-y-2 text-xs font-light">
+            <li><a href="#features" class="hover:text-gold-primary transition duration-150 focus-visible:outline-none">Diferenciais</a></li>
+            <li><a href="#testimonials" class="hover:text-gold-primary transition duration-150 focus-visible:outline-none">Depoimentos</a></li>
+            <li><a href="#download" class="hover:text-gold-primary transition duration-150 focus-visible:outline-none">Download do App</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Legais -->
+        <div class="space-y-4">
+          <h4 class="text-xs font-semibold text-white uppercase tracking-wider">Políticas e Termos</h4>
+          <ul class="space-y-2 text-xs font-light">
+            <li><a href="#" class="hover:text-gold-primary transition duration-150 focus-visible:outline-none">Termos de Uso</a></li>
+            <li><a href="#" class="hover:text-gold-primary transition duration-150 focus-visible:outline-none">Política de Privacidade</a></li>
+            <li><a href="#" class="hover:text-gold-primary transition duration-150 focus-visible:outline-none">Segurança de Dados</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Redes Sociais e Selos Inferiores -->
+      <div class="mt-12 pt-8 border-t border-dark-border flex flex-col sm:flex-row items-center justify-between gap-6">
+        
+        <!-- Redes Sociais com ícones da Lucide -->
+        <div class="flex space-x-5">
+          <a href="#" class="hover:text-gold-primary transition duration-200 focus-visible:outline-none" aria-label="Acompanhe a Extremo Oriente no Instagram">
+            <i data-lucide="instagram" class="w-4 h-4" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="hover:text-gold-primary transition duration-200 focus-visible:outline-none" aria-label="Acompanhe a Extremo Oriente no LinkedIn">
+            <i data-lucide="linkedin" class="w-4 h-4" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="hover:text-gold-primary transition duration-200 focus-visible:outline-none" aria-label="Inscreva-se no canal do YouTube">
+            <i data-lucide="youtube" class="w-4 h-4" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Selo de Acessibilidade e Credibilidade -->
+        <div class="flex items-center space-x-3 text-[9px] text-gray-600 font-light">
+          <div class="flex items-center space-x-1 border border-dark-border px-2.5 py-1 rounded-md">
+            <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+            <span>Acessibilidade WCAG 2.1</span>
+          </div>
+          <div class="flex items-center space-x-1 border border-dark-border px-2.5 py-1 rounded-md">
+            <i data-lucide="shield" class="w-2.5 h-2.5 text-gold-primary" aria-hidden="true"></i>
+            <span>Conexão SSL 100% Segura</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lógica da Aplicação JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

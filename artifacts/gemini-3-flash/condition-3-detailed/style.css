@@ -1,0 +1,138 @@
+/* --------------------------------------------------
+   Imobiliária Extremo Oriente - Estilos Premium
+   -------------------------------------------------- */
+
+/* 1. Design Tokens & Variáveis do Sistema */
+:root {
+  --color-gold-primary: #D4AF37;
+  --color-gold-hover: #FFD700;
+  --color-gold-dark: #9A7B1C;
+  --color-gold-light: #F3E5AB;
+  
+  --color-dark-bg: #0a0a0a;
+  --color-dark-card: #121212;
+  --color-dark-border: #1c1c1c;
+  
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 2. Suporte estrito a Acessibilidade: prefers-reduced-motion (WCAG) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-float {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* 3. Estilização da Barra de Rolagem de Luxo */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark);
+  border-radius: 4px;
+  border: 2px solid var(--color-dark-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-primary);
+}
+
+/* 4. Estilos de Foco Acessíveis e Visíveis */
+*:focus-visible {
+  outline: 2px solid var(--color-gold-hover) !important;
+  outline-offset: 4px;
+}
+
+/* 5. Customizações de Efeitos Visuais */
+
+/* Efeito Glow Dourado para botões e elementos interativos */
+.btn-gold-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold-glow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 60%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+  pointer-events: none;
+}
+
+.btn-gold-glow:hover::after {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Efeito Glassmorphism de Luxo */
+.glass-panel {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-gold {
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Tipografia de Cabeçalhos e Margem de Âncora de Rolagem */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  scroll-margin-top: 100px; /* Garante que âncoras tenham margem perfeita em relação ao header fixo */
+}
+
+/* Efeito de Dourado Metálico Gradiente */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold-primary) 50%, var(--color-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animações de Floating (Flutuação de alta performance via transform) */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* 6. Ajustes de Contraste para textos pequenos sobre fundos escuros */
+.text-body-muted {
+  color: #a3a3a3; /* Garante contraste WCAG AA para textos menores */
+}

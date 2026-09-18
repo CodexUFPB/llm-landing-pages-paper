@@ -1,0 +1,14 @@
+{
+  "name": "landingpage5",
+  "version": "1.0.0",
+  "description": "Landing page premium destinada a promover o download do aplicativo da Imobiliária Extremo Oriente. Design em preto e dourado, com hero image, catálogo de imóveis, avaliações e chamadas para ação.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx -y serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

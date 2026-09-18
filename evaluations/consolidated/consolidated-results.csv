@@ -1,0 +1,25 @@
+criterion_id,gemini-3-flash_condition-1,gemini-3-flash_condition-2,gemini-3-flash_condition-3,gpt-oss-120b_condition-1,gpt-oss-120b_condition-2,gpt-oss-120b_condition-3,claude-opus-4-6_condition-1,claude-opus-4-6_condition-2,claude-opus-4-6_condition-3
+01,yes,no,yes,no,no,no,no,no,no
+02,no,yes,yes,no,no,DIV,yes,yes,yes
+03,no,failed,failed,no,no,no,ok,failed,failed
+04,low,medium,medium,low,low,low,medium,medium,low
+05,no,yes,yes,yes,yes,yes,yes,yes,yes
+06,3,5,3,3,4,2,4,4,3
+07,"features, catalog, reviews, download","header, hero, features, curation, reviews, download","hero, features, reviews, download","hero, features, reviews, download","hero, catalog, about us, reviews, download","hero, features, reviews, download","hero, features, catalog, reviews, download","features, catalog, reviews, download","hero, features, reviews, download"
+08,DIV,yes,yes,yes,no,no,yes,yes,yes
+09,low,adequate,adequate,adequate,high,low,adequate,adequate,adequate
+10,low,adequate,adequate,adequate,adequate,low,adequate,adequate,adequate
+11,medium,medium,medium,medium,medium,low,high,medium,medium
+12,yes,yes,yes,no,no,no,yes,yes,yes
+13,yes,yes,yes,yes,yes,no,yes,yes,yes
+14,1,0,1,5,0,10,0,1,2
+15,high,low,high,high,high,high,low,medium,low
+16,medium,medium,medium,medium,high,high,medium,high,high
+17,medium,medium,medium,weak,medium,weak,medium,medium,medium
+18,shallow,medium,medium,shallow,shallow,shallow,medium,medium,medium
+19,no,no,no,no,no,no,no,no,no
+20,DIV,yes,yes,yes,yes,no,yes,yes,yes
+21,no,no,no,no,no,no,DIV,no,DIV
+22,yes,yes,yes,yes,yes,no,yes,yes,yes
+23,high,low,medium,high,high,high,low,medium,low
+24,1,4,3,2,2,1,5,3,3

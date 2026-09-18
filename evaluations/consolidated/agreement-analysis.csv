@@ -1,0 +1,6 @@
+criterion_type,n_records,full_agreement_pct,three_of_four_pct,n_full_agreement,n_three_of_four
+dichotomous,86,72.1,94.2,62,81
+ordinal-3,83,43.4,69.9,36,58
+count,14,0.0,35.7,0,5
+scale-5,9,11.1,55.6,1,5
+all,192,51.6,77.6,99,149

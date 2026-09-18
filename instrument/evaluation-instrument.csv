@@ -1,0 +1,25 @@
+criterion_id,dimension,criterion,description,scale_type,scale_values,reference
+01,visual identity,Favicon,presence of the icon in the browser tab,dichotomous,yes / no,Emergent
+02,visual identity,Icons,use of visual elements in the sections,dichotomous,yes / no,Emergent
+03,visual identity,Store icons,App Store / Google Play generated correctly,ordinal-3,no / failed / ok,Emergent
+04,visual identity,Illustrative images,relevance and quality of the generated images,ordinal-3,low / medium / high,Lidwell et al. (2010)
+05,structure and layout,Understanding of the LP,AI understood the landing-page structure,dichotomous,yes / no,Meslem and Abbaci (2022)
+06,structure and layout,No. of sections,total number of sections,count,non-negative integer,Emergent
+07,structure and layout,Section themes,which sections were generated,descriptive,free text,Emergent
+08,structure and layout,Navigation menu,presence of a functional nav/header,dichotomous,yes / no,Krug (2014)
+09,structure and layout,Repetition of elements,excessive reuse of components,ordinal-3,low / adequate / high,Emergent
+10,structure and layout,Spacing,visual rhythm between elements,ordinal-3,low / adequate / excessive,Lidwell et al. (2010)
+11,technique and code,Responsiveness,adaptation to different screen sizes,ordinal-3,low / medium / high,Marcotte (2014); ISO 9241-11 (2018)
+12,technique and code,General animations,"scroll, entrance, CSS transitions",dichotomous,yes / no,Nielsen (1994)
+13,technique and code,Hover / Interaction,visual feedback on buttons and links,dichotomous,yes / no,Nielsen (1994)
+14,technique and code,CSS failures,number of visual errors in the code,count,non-negative integer,Emergent
+15,technique and code,Severity of failures,impact of failures on the experience,ordinal-3,low / medium / high,Nielsen (1994)
+16,readability and hierarchy,Contrast and readability,readable text on backgrounds,ordinal-3,low / medium / high,ISO 9241-11 (2018)
+17,readability and hierarchy,Typographic hierarchy,emphasis and weight of headings/texts,ordinal-3,weak / medium / strong,Lidwell et al. (2010)
+18,readability and hierarchy,Content depth,informative or generic texts,ordinal-3,shallow / medium / detailed,Krug (2014)
+19,readability and hierarchy,Content filters,interaction for hiding part of the content,dichotomous,yes / no,Emergent
+20,UI components,Recognizable buttons,CTAs with button-like appearance,dichotomous,yes / no,Norman (2013)
+21,UI components,False buttons,non-clickable texts with button-like appearance,dichotomous,yes / no,Norman (2013)
+22,UI components,Rounded corners,use of border-radius on elements,dichotomous,yes / no,Emergent
+23,overall evaluation,Level of adjustment required,effort required to reach the final product,ordinal-3,low / medium / high,Emergent
+24,overall evaluation,Overall quality,consolidated impression of the interface,scale-5,1 / 2 / 3 / 4 / 5,Brooke (1996)
